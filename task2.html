@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2 class="text-center">Check Your Photo Dimensions</h2>
+    <form id="photoInfo" class="container py-3">
+        <div class="row">
+            <div class="col-12 col-md-6 col-sm-12 mb-3">
+                <label for="L" class="form-label">Minimum Dimension (L):</label>
+                <input type="number" class="form-control" id="L" required>
+            </div>
+            <div class="col-12 col-md-6 col-sm-12 mb-3">
+                <label for="N" class="form-label">Number of Photos (N):</label>
+                <input type="number" class="form-control" id="N" required>
+            </div>
+            <div class="col-12 col-md-6 col-sm-12 mb-3">
+                <label for="W1" class="form-label">Width (W):</label>
+                <input type="number" class="form-control" id="W1" name="W" required>
+            </div>
+            <div class="col-12 col-md-6 col-sm-12 mb-3">
+                <label for="H1" class="form-label">Height (H):</label>
+                <input type="number" class="form-control" id="H1" name="H" required>
+            </div>
+    </div>    
+    <button type="submit" class="btn btn-secondary">Check Photos</button>
+    </form>
+    <div class="text-center">
+        <h3>Result:</h3>
+        <ul type="none" id="results"></ul>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
